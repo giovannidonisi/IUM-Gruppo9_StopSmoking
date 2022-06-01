@@ -1,0 +1,5 @@
+<resources>
+    <string name="advice0">Primo consiglio</string>
+    <string name="advice1">Secondo consiglio</string>
+    <string name="advice2">Terzo consiglio</string>
+</resources>

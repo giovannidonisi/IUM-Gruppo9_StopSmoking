@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_health" />
+
+    <item
+        android:id="@+id/navigation_savings"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/title_savings" />
+
+    <item
+        android:id="@+id/navigation_goals"
+        android:icon="@drawable/ic_target"
+        android:title="@string/title_goals" />
+
+    <item
+        android:id="@+id/navigation_advices"
+        android:icon="@drawable/ic_no_smoke"
+        android:title="@string/title_advices" />
+
+</menu>

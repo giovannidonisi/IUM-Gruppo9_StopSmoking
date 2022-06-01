@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_health">
+
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="ium.unisa.stopsmoking.fragments.HealthFragment"
+        android:label="@string/title_health"
+        tools:layout="@layout/fragment_health" />
+
+    <fragment
+        android:id="@+id/navigation_savings"
+        android:name="ium.unisa.stopsmoking.fragments.SavingsFragment"
+        android:label="@string/title_savings"
+        tools:layout="@layout/fragment_savings" />
+
+    <fragment
+        android:id="@+id/navigation_goals"
+        android:name="ium.unisa.stopsmoking.fragments.GoalsFragment"
+        android:label="@string/title_goals"
+        tools:layout="@layout/fragment_goals" />
+
+    <fragment
+        android:id="@+id/navigation_advices"
+        android:name="ium.unisa.stopsmoking.fragments.AdvicesFragment"
+        android:label="@string/title_advices"
+        tools:layout="@layout/fragment_advices" />
+</navigation>
