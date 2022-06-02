@@ -36,4 +36,7 @@
     <string name="cigarettes_saved">Since you quit smoking you have avoided %1$d cigarettes, equivalent to approximately %2$d days of life</string>
     <string name="cigarettes_would_save">If you quit smoking you would avoid %1$d cigarettes per month, more than %2$d per year. This means recovering around %3$d days of life per year!</string>
     <string name="switch_quit_warning">If you proceed you will lose all your progress in the app. Are you sure you want to continue?</string>
+    <string name="left_arrow">Left Arrow</string>
+    <string name="right_arrow">Right Arrow</string>
+    <string name="settings_icon">Settings Icon</string>
 </resources>

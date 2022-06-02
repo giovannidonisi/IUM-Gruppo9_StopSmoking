@@ -35,4 +35,7 @@
     <string name="cigarettes_saved">Da quando hai smesso di fumare hai evitato %1$d sigarette, equivalenti a circa %2$d giorni di vita</string>
     <string name="cigarettes_would_save">Se smettessi di fumare eviteresti %1$d sigarette al mese, più di %2$d all\'anno. Ciò vuol dire recuperare circa %3$d giorni di vita all\'anno!</string>
     <string name="switch_quit_warning">Se procedi perderai tutti i tuoi progressi nell\'app. Sei sicuro di voler continuare?</string>
+    <string name="left_arrow">Freccia sinistra</string>
+    <string name="right_arrow">Freccia destra</string>
+    <string name="settings_icon">Icona delle impostazioni</string>
 </resources>

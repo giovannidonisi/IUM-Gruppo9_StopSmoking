@@ -6,13 +6,79 @@
     android:layout_height="match_parent"
     tools:context="ium.unisa.stopsmoking.fragments.AdvicesFragment">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/left_arrow"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:icon="@drawable/ic_arrow_left"
+        app:iconPadding="0dp"
+        android:layout_marginStart="8dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:iconSize="32dp"
+        app:iconGravity="textStart"
+        android:padding="0dp"
+        android:paddingEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:contentDescription="@string/left_arrow"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/right_arrow"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:icon="@drawable/ic_arrow_right"
+        app:iconPadding="0dp"
+        android:paddingStart="2dp"
+        android:layout_marginEnd="8dp"
+        app:iconSize="32dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:contentDescription="@string/right_arrow"/>
+<!--
+    <ImageButton
+        android:id="@+id/left_arrow"
+        android:src="@drawable/ic_angle_left"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:background="#00ffffff"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/left_arrow" />
+
+    <ImageButton
+        android:id="@+id/right_arrow"
+        android:src="@drawable/ic_angle_right"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:background="#00ffffff"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/right_arrow" />
+-->
     <TextView
         android:id="@+id/text_advices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="56dp"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
