@@ -47,43 +47,34 @@
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.Material3.Button.TonalButton"
         android:contentDescription="@string/right_arrow"/>
-<!--
-    <ImageButton
-        android:id="@+id/left_arrow"
-        android:src="@drawable/ic_angle_left"
-        android:layout_width="18dp"
-        android:layout_height="24dp"
-        android:background="#00ffffff"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/left_arrow" />
 
-    <ImageButton
-        android:id="@+id/right_arrow"
-        android:src="@drawable/ic_angle_right"
-        android:layout_width="18dp"
-        android:layout_height="24dp"
-        android:background="#00ffffff"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/right_arrow" />
--->
-    <TextView
-        android:id="@+id/text_advices"
+    <ViewFlipper
+        android:id="@+id/view_flipper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:orientation="vertical"
+        android:translationZ="-1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/text_advices1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="64dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_advices2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="64dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </ViewFlipper>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
