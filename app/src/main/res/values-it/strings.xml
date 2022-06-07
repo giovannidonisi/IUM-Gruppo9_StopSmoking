@@ -7,7 +7,7 @@
     <string name="about">Info</string>
     <string name="view_on_github">Visualizza su GitHub</string>
     <string name="contribute_to_project">Contribuisci a questo progetto</string>
-    <string name="app_info">Versione 0.1.0\n\nProgetto di Interazione Uomo Macchina, da:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
+    <string name="app_info">Versione 0.5.0\n\nProgetto di Interazione Uomo Macchina, da:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
     <string name="preferences">Preferenze</string>
     <string name="theme">Tema</string>
     <string name="choose_theme">Scegli il tema</string>
@@ -38,4 +38,61 @@
     <string name="left_arrow">Freccia sinistra</string>
     <string name="right_arrow">Freccia destra</string>
     <string name="settings_icon">Icona delle impostazioni</string>
+
+    <!-- Cards -->
+    <plurals name="reached_in">
+        <item quantity="one" formatted="true">Raggiunto in %d giorno</item>
+        <item quantity="other" formatted="true">Raggiunto in %d giorni</item>
+    </plurals>
+    <string name="completed">Completato!</string>
+    <string name="title1">Pressione</string>
+    <string name="secondary_text1">Si riduce la pressione sanguigna</string>
+    <string name="title2">Battito</string>
+    <string name="secondary_text2">Si riduce la frequenza cardiaca</string>
+    <string name="title3">Monossido</string>
+    <string name="secondary_text3">Diminuisce la quantità di monossido di carbonio nel sangue</string>
+    <string name="title4">Ossigeno</string>
+    <string name="secondary_text4">Aumenta la quantità di ossigeno nel sangue</string>
+    <string name="title5">Coronarie</string>
+    <string name="secondary_text5">Si riduce il rischio di malattie alle coronarie</string>
+    <string name="title6">Sonno</string>
+    <string name="secondary_text6">Migliora il sonno</string>
+    <string name="title7">Muscoli</string>
+    <string name="secondary_text7">I muscoli funzionano meglio</string>
+    <string name="title8">Gusto</string>
+    <string name="secondary_text8">Ritorna il senso del gusto</string>
+    <string name="title9">Olfatto</string>
+    <string name="secondary_text9">Ritorna il senso dell\'olfatto</string>
+    <string name="title10">Alito</string>
+    <string name="secondary_text10">Sparisce l\'alito cattivo</string>
+    <string name="title11">Denti</string>
+    <string name="secondary_text11">I denti si schiariscono</string>
+    <string name="title12">Pelle</string>
+    <string name="secondary_text12">La pelle è meno unta e rugosa</string>
+    <string name="title13">Stanchezza</string>
+    <string name="secondary_text13">Si riducono affanno e stanchezza</string>
+    <string name="title14">Diabete</string>
+    <string name="secondary_text14">Si riduce il rischio di diabete</string>
+    <string name="title15">Bronchi</string>
+    <string name="secondary_text15">I bronchi sono più aperti e meno infiammati</string>
+    <string name="title16">Tosse</string>
+    <string name="secondary_text16">Si produce meno catarro, riducendo la tosse</string>
+    <string name="title17">Bronchite</string>
+    <string name="secondary_text17">Si riduce il rischio di bronchite</string>
+    <string name="title18">Circolazione</string>
+    <string name="secondary_text18">Si riducono i problemi circolatori</string>
+    <string name="title19">Sesso</string>
+    <string name="secondary_text19">Migliorano le prestazioni sessuali</string>
+    <string name="title20">Infarto</string>
+    <string name="secondary_text20">Rischi di infarto e ictus ridotti del 50%</string>
+    <string name="title21">Clearance mucociliare</string>
+    <string name="secondary_text21">Ricomuncia a funzionare il meccanismo di pulizia che rimuove i corpi estranei che penetrano con l\’aria inspirata</string>
+    <string name="title22">Trombosi</string>
+    <string name="secondary_text22">Si riduce il rischio di trombosi</string>
+    <string name="title23">Embolia</string>
+    <string name="secondary_text23">Si riduce il rischio di embolia</string>
+    <string name="title24">Tumore</string>
+    <string name="secondary_text24">Si riduce il rischio di tumore al polmone</string>
+    <string name="title25">Disintossicazione</string>
+    <string name="secondary_text25">Il rischio di attacchi di cuore o tumori è uguale a quello di un non fumatore</string>
 </resources>

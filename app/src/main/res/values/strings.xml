@@ -8,7 +8,7 @@
     <string name="about">About</string>
     <string name="view_on_github">View on GitHub</string>
     <string name="contribute_to_project">Contribute to this project</string>
-    <string name="app_info">Version 0.1.0\n\nHuman-Computer Interaction project, by:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
+    <string name="app_info">Version 0.5.0\n\nHuman-Computer Interaction project, by:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
     <string name="preferences">Preferences</string>
     <string name="theme">Theme</string>
     <string name="choose_theme">Choose Theme</string>
@@ -39,4 +39,61 @@
     <string name="left_arrow">Left Arrow</string>
     <string name="right_arrow">Right Arrow</string>
     <string name="settings_icon">Settings Icon</string>
+
+    <!-- Cards -->
+    <plurals name="reached_in">
+        <item quantity="one" formatted="true">Reached in %d day</item>
+        <item quantity="other" formatted="true">Reached in %d days</item>
+    </plurals>
+    <string name="completed">Completed!</string>
+    <string name="title1">Pressure</string>
+    <string name="secondary_text1">Blood pressure is reduced</string>
+    <string name="title2">Heart rate</string>
+    <string name="secondary_text2">Heart rate decreases</string>
+    <string name="title3">Monoxide</string>
+    <string name="secondary_text3">The amount of carbon monoxide in the blood decreases</string>
+    <string name="title4">Oxygen</string>
+    <string name="secondary_text4">The amount of oxygen in the blood increases</string>
+    <string name="title5">Coronary</string>
+    <string name="secondary_text5">The risk of coronary heart disease is reduced</string>
+    <string name="title6">Sleep</string>
+    <string name="secondary_text6">Sleep improves</string>
+    <string name="title7">Muscles</string>
+    <string name="secondary_text7">Muscles work better</string>
+    <string name="title8">Taste</string>
+    <string name="secondary_text8">The sense of taste returns</string>
+    <string name="title9">Smell</string>
+    <string name="secondary_text9">The sense of smell returns</string>
+    <string name="title10">Breath</string>
+    <string name="secondary_text10">Bad breath disappears</string>
+    <string name="title11">Teeth</string>
+    <string name="secondary_text11">Teeth lighten</string>
+    <string name="title12">Skin</string>
+    <string name="secondary_text12">The skin is less greasy and wrinkled</string>
+    <string name="title13">Tiredness</string>
+    <string name="secondary_text13">Wheezing and tiredness are reduced</string>
+    <string name="title14">Diabetes</string>
+    <string name="secondary_text14">The risk of diabetes is reduced</string>
+    <string name="title15">Bronchi</string>
+    <string name="secondary_text15">The bronchi are more open and less inflamed</string>
+    <string name="title16">Cough</string>
+    <string name="secondary_text16">Less phlegm is produced, reducing coughing</string>
+    <string name="title17">bronchitis</string>
+    <string name="secondary_text17">The risk of bronchitis is reduced</string>
+    <string name="title18">Circulation</string>
+    <string name="secondary_text18">Circulatory problems are reduced</string>
+    <string name="title19">Sex</string>
+    <string name="secondary_text19">Sexual performances improve</string>
+    <string name="title20">Heart attack</string>
+    <string name="secondary_text20">Risk of heart attack and stroke reduced by 50%</string>
+    <string name="title21">Mucociliary clearance</string>
+    <string name="secondary_text21">The cleaning mechanism that removes foreign bodies that penetrate with the inhaled air starts working again</string>
+    <string name="title22">Thrombosis</string>
+    <string name="secondary_text22">The risk of thrombosis is reduced</string>
+    <string name="title23">embolism</string>
+    <string name="secondary_text23">The risk of embolism is reduced</string>
+    <string name="title24">Cancer</string>
+    <string name="secondary_text24">Lung cancer risk is reduced</string>
+    <string name="title25">Detoxification</string>
+    <string name="secondary_text25">The risk of heart attacks or cancers is equal to that of a non-smoker</string>
 </resources>

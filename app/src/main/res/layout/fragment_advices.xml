@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="64dp"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/text_advices2"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="64dp"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </ViewFlipper>
 

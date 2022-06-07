@@ -45,9 +45,10 @@ public class AdvicesFragment extends Fragment {
 
         Context context = requireContext();
         Resources resources = context.getResources();
+        String packageName = context.getPackageName();
 
         for (int i = 0; i < 3; i++) {
-            int resourceId = resources.getIdentifier("advice" + i, "string", context.getPackageName());
+            int resourceId = resources.getIdentifier("advice" + i, "string", packageName);
             lista.add(resources.getString(resourceId));
         }
 

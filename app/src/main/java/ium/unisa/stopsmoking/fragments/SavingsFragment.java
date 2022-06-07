@@ -38,9 +38,9 @@ public class SavingsFragment extends Fragment {
         if (stoppedDateInMillis > 0) {
             int days = AppHelper.getDateDifferenceInDays(System.currentTimeMillis(), stoppedDateInMillis);
             int moneySaved = Math.round(quantity * pricePerCigarette * days);
-            s = String.format(resources.getString(R.string.money_saved), moneySaved, moneyPerMonth, moneyPerMonth * 12);
+            s = resources.getString(R.string.money_saved, moneySaved, moneyPerMonth, moneyPerMonth * 12);
         } else {
-            s = String.format(resources.getString(R.string.money_would_save), moneyPerMonth, moneyPerMonth * 12);
+            s = resources.getString(R.string.money_would_save, moneyPerMonth, moneyPerMonth * 12);
         }
         textView.setText(s);
 
