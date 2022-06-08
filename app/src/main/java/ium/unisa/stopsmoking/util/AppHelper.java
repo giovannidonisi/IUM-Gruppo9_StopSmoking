@@ -29,34 +29,9 @@ public class AppHelper {
         }
     }
 
-    public static ArrayList<Integer> getReachedInDays() {
-        ArrayList<Integer> lista = new ArrayList<>();
-        lista.add(1);
-        lista.add(1);
-        lista.add(1);
-        lista.add(1);
-        lista.add(1);
-        lista.add(2);
-        lista.add(2);
-        lista.add(3);
-        lista.add(3);
-        lista.add(4);
-        lista.add(5);
-        lista.add(7);
-        lista.add(7);
-        lista.add(60);
-        lista.add(90);
-        lista.add(90);
-        lista.add(120);
-        lista.add(120);
-        lista.add(120);
-        lista.add(365);
-        lista.add(365);
-        lista.add(1825);
-        lista.add(2555);
-        lista.add(2555);
-        lista.add(3650);
-        return lista;
+    public static int[] getReachedInDays() {
+        return new int[] {1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 7, 7, 60, 90,
+                90, 120, 120, 120, 365, 365, 1825, 2555, 2555, 3650};
     }
 
     public static void log(Object what) {

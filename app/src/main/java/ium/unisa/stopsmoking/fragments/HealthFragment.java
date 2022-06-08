@@ -27,7 +27,6 @@ public class HealthFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentHealthBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
         Resources resources = requireContext().getResources();
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext());
@@ -50,21 +49,18 @@ public class HealthFragment extends Fragment {
         textView.setText(s);
         buildCards();
 
-        return root;
+        return binding.getRoot();
     }
 
     private void buildCards() {
         Context context = requireContext();
         Resources resources = context.getResources();
-        String packageName = context.getPackageName();
-        View view = binding.getRoot();
-        ArrayList<Integer> lista = AppHelper.getReachedInDays();
-        int size = lista.size();
+        int[] lista = AppHelper.getReachedInDays();
 
-        for (int i = 0; i < size; i++) {
-            int resourceId = resources.getIdentifier("reached" + i, "id", packageName);
-            TextView tv = view.findViewById(resourceId);
-            int reachedIn = lista.get(i);
+        for (int i = 0; i < lista.length; i++) {
+            int resourceId = resources.getIdentifier("reached" + i, "id", context.getPackageName());
+            TextView tv = binding.getRoot().findViewById(resourceId);
+            int reachedIn = lista[i];
 
             if (days < reachedIn) {
                 int count = reachedIn - days;
