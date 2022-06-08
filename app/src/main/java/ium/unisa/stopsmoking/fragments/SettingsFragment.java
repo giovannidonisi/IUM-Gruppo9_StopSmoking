@@ -1,7 +1,6 @@
 package ium.unisa.stopsmoking.fragments;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,10 +12,7 @@ import androidx.preference.SwitchPreference;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
-import java.util.concurrent.atomic.AtomicBoolean;
-
 import ium.unisa.stopsmoking.R;
-import ium.unisa.stopsmoking.util.AppHelper;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 

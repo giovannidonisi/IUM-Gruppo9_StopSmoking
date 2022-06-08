@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
-import java.util.ArrayList;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 
 import ium.unisa.stopsmoking.R;
 import ium.unisa.stopsmoking.databinding.FragmentHealthBinding;
@@ -61,15 +60,22 @@ public class HealthFragment extends Fragment {
             int resourceId = resources.getIdentifier("reached" + i, "id", context.getPackageName());
             TextView tv = binding.getRoot().findViewById(resourceId);
             int reachedIn = lista[i];
+            int percent;
 
             if (days < reachedIn) {
+                percent = days * 100 / reachedIn;
                 int count = reachedIn - days;
                 tv.setText(resources.getQuantityString(R.plurals.reached_in, count, count));
             }
             else {
+                percent = 100;
                 tv.setTextColor(resources.getColor(R.color.success));
                 tv.setText(resources.getString(R.string.completed));
             }
+
+            resourceId = resources.getIdentifier("progress" + i, "id", context.getPackageName());
+            LinearProgressIndicator progressBar = binding.getRoot().findViewById(resourceId);
+            progressBar.setProgressCompat(percent, true);
         }
     }
 

@@ -4,8 +4,6 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
-import java.util.ArrayList;
-
 public class AppHelper {
 
     public static final String LOGGER_TAG = "DEBUGGING";

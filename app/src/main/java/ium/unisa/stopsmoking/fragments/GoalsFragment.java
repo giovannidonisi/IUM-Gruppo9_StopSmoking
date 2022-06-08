@@ -2,7 +2,6 @@ package ium.unisa.stopsmoking.fragments;
 
 import android.os.Bundle;
 import android.text.InputFilter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,6 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
-import ium.unisa.stopsmoking.MainActivity;
 import ium.unisa.stopsmoking.R;
 import ium.unisa.stopsmoking.databinding.FragmentGoalsBinding;
 import ium.unisa.stopsmoking.util.AppHelper;

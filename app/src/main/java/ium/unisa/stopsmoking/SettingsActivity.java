@@ -3,12 +3,9 @@ package ium.unisa.stopsmoking;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
-
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import ium.unisa.stopsmoking.fragments.SettingsFragment;
 import ium.unisa.stopsmoking.util.AppHelper;
