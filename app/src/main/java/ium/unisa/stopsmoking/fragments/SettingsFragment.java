@@ -72,7 +72,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         String key = preference.getKey();
         if (key.equals("contribute")) {
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://github.com/giovannidonisi/StopSmoking"));
+            i.setData(Uri.parse("https://github.com/giovannidonisi/IUM-Gruppo9_StopSmoking"));
             startActivity(i);
             return true;
         }

@@ -67,6 +67,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress0"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -112,6 +113,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress1"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     
@@ -157,6 +159,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress2"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     
@@ -202,6 +205,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress3"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -247,6 +251,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress4"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     
@@ -292,6 +297,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress5"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -337,6 +343,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress6"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -382,6 +389,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress7"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -427,6 +435,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress8"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -472,6 +481,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress9"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -517,6 +527,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress10"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -562,6 +573,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress11"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -607,6 +619,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress12"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -652,6 +665,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress13"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -697,6 +711,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress14"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -742,6 +757,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress15"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -787,6 +803,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress16"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -832,6 +849,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress17"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -877,6 +895,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress18"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -922,6 +941,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress19"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -967,6 +987,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress20"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -1012,6 +1033,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress21"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -1057,6 +1079,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress22"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -1102,6 +1125,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress23"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -1147,6 +1171,7 @@
                         />
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress24"
+                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 

@@ -8,7 +8,7 @@
     <string name="about">About</string>
     <string name="view_on_github">View on GitHub</string>
     <string name="contribute_to_project">Contribute to this project</string>
-    <string name="app_info">Version 0.5.0\n\nHuman-Computer Interaction project, by:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
+    <string name="app_info">Version 0.6.0\n\nHuman-Computer Interaction project, by:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
     <string name="preferences">Preferences</string>
     <string name="theme">Theme</string>
     <string name="choose_theme">Choose Theme</string>
