@@ -4,7 +4,7 @@
 Abbiamo scelto di creare una applicazione per Android che possa aiutare tutte le categorie di fumatori
 (abituali, accaniti e saltuari) nello smettere di fumare cercando di mostrar loro i danni della nicotina
 sul loro corpo e i vantaggi (salutari, monetari e psicologici) che trarrebbero dallo smettere di farlo.<br><br>
-Il codice dell'applicazione si trova all'interno della cartella `app/src/main`
+Il codice dell'applicazione si trova all'interno della cartella `app/src/main/java/ium/unisa/stopsmoking`.
 
 #### Partecipanti:
 - Giovanni Donisi

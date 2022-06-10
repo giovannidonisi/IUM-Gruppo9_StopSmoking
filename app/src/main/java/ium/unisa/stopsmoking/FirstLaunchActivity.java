@@ -64,11 +64,11 @@ public class FirstLaunchActivity extends AppCompatActivity {
             l = date.getTime();
         }
 
-        String q = etQuantity.getText().toString();
+        String q = etQuantity.getText().toString().trim();
         if (q.isEmpty())
             q = "10";
 
-        String p = etPrice.getText().toString();
+        String p = etPrice.getText().toString().trim();
         if (p.isEmpty())
             p = "5";
 
