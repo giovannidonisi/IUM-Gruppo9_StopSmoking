@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "ium.unisa.stopsmoking"
-        minSdk 21
+        minSdk 24
         targetSdk 32
         versionCode 4
         versionName "0.6.0"

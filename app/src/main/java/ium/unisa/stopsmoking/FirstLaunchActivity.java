@@ -1,6 +1,7 @@
 package ium.unisa.stopsmoking;
 
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
@@ -13,7 +14,6 @@ import androidx.preference.PreferenceManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class FirstLaunchActivity extends AppCompatActivity {
@@ -57,11 +57,12 @@ public class FirstLaunchActivity extends AppCompatActivity {
     View.OnClickListener listener = view -> {
         long l = -1;
         if (switchStopped.isChecked()) {
-            int y = datePicker.getYear() - 1900;
+            int y = datePicker.getYear();
             int m = datePicker.getMonth();
             int d = datePicker.getDayOfMonth();
-            Date date = new Date(y, m, d);
-            l = date.getTime();
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(y, m, d);
+            l = calendar.getTimeInMillis();
         }
 
         String q = etQuantity.getText().toString().trim();
