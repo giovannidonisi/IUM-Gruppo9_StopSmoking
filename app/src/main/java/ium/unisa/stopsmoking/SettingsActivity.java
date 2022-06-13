@@ -22,6 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
                 .replace(android.R.id.content, new SettingsFragment())
                 .commit();
 
+        setTitle(R.string.settings);
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         sharedPreferences.registerOnSharedPreferenceChangeListener(listener);
