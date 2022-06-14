@@ -57,7 +57,7 @@ public class GoalsFragment extends Fragment {
         LinearLayout linearLayout = (LinearLayout) getLayoutInflater().inflate(R.layout.layout_add_goal, null);
         final TextInputEditText ti1 = linearLayout.findViewById(R.id.ti1);
         final TextInputEditText ti2 = linearLayout.findViewById(R.id.ti2);
-        ti2.setFilters(new InputFilter[] {new DecimalDigitsInputFilter(9,2)});
+        ti2.setFilters(new InputFilter[]{new DecimalDigitsInputFilter(9, 2)});
 
         new MaterialAlertDialogBuilder(requireContext())
                 .setTitle(R.string.add_goal)
@@ -84,7 +84,7 @@ public class GoalsFragment extends Fragment {
                     SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
                     if (selectedGoal == null) {
                         int id = goals.size();
-                        Goal newGoal= new Goal(id, name, price);
+                        Goal newGoal = new Goal(id, name, price);
                         goals.add(newGoal);
                         sqLiteManager.addGoalToDatabase(newGoal);
                     } else {

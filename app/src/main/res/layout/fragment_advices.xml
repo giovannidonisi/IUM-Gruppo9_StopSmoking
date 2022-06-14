@@ -8,45 +8,45 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/left_arrow"
+        style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        app:icon="@drawable/ic_arrow_left"
-        app:iconPadding="0dp"
         android:layout_marginStart="8dp"
+        android:contentDescription="@string/left_arrow"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
-        app:iconSize="32dp"
-        app:iconGravity="textStart"
         android:padding="0dp"
         android:paddingEnd="2dp"
+        app:icon="@drawable/ic_arrow_left"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/Widget.Material3.Button.TonalButton"
-        android:contentDescription="@string/left_arrow"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/right_arrow"
+        style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        app:icon="@drawable/ic_arrow_right"
-        app:iconPadding="0dp"
-        android:paddingStart="2dp"
         android:layout_marginEnd="8dp"
-        app:iconSize="32dp"
+        android:contentDescription="@string/right_arrow"
         android:insetLeft="0dp"
         android:insetTop="0dp"
         android:insetRight="0dp"
         android:insetBottom="0dp"
         android:padding="0dp"
+        android:paddingStart="2dp"
+        app:icon="@drawable/ic_arrow_right"
         app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/Widget.Material3.Button.TonalButton"
-        android:contentDescription="@string/right_arrow"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ViewFlipper
         android:id="@+id/view_flipper"
@@ -57,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/text_advices1"

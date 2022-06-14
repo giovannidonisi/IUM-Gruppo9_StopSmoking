@@ -52,8 +52,8 @@
 
     <!-- Cards -->
     <plurals name="reached_in">
-        <item quantity="one" formatted="true">Reached in %d day</item>
-        <item quantity="other" formatted="true">Reached in %d days</item>
+        <item formatted="true" quantity="one">Reached in %d day</item>
+        <item formatted="true" quantity="other">Reached in %d days</item>
     </plurals>
     <string name="completed">Completed!</string>
     <string name="title1">Pressure</string>

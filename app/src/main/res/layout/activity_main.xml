@@ -9,13 +9,13 @@
         android:id="@+id/settings_button"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:background="#00ffffff"
-        android:src="@drawable/ic_settings"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00ffffff"
+        android:contentDescription="@string/settings_icon"
+        android:src="@drawable/ic_settings"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/settings_icon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"

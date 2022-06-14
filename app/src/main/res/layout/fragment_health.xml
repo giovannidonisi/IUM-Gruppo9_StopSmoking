@@ -47,29 +47,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title1"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text1"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress0"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -93,30 +93,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title2"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text2"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress1"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -139,30 +139,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title3"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text3"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress2"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -185,29 +185,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text4"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress3"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -231,30 +231,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title5"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text5"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress4"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -277,29 +277,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title6"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text6"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress5"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -323,29 +323,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title7"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text7"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress6"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -369,29 +369,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title8"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text8"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress7"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -415,29 +415,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title9"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text9"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress8"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -461,29 +461,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title10"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text10"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress9"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -507,29 +507,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title11"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text11"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress10"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -553,29 +553,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title12"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text12"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress11"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -599,29 +599,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title13"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text13"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress12"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -645,29 +645,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title14"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text14"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress13"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -691,29 +691,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title15"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text15"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress14"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -737,29 +737,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title16"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text16"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress15"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -783,29 +783,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title17"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text17"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress16"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -829,29 +829,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title18"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text18"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress17"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -875,29 +875,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title19"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text19"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress18"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -921,29 +921,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title20"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text20"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress19"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -967,29 +967,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title21"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text21"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress20"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -1013,29 +1013,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title22"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text22"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress21"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -1059,29 +1059,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title23"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text23"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress22"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -1105,29 +1105,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title24"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text24"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress23"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 
@@ -1151,29 +1151,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/title25"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
                         android:text="@string/secondary_text25"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <TextView
                         android:id="@+id/reached24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="6dp"
                         android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="?android:attr/textColorSecondary"
-                        />
+                        android:textColor="?android:attr/textColorSecondary" />
+
                     <com.google.android.material.progressindicator.LinearProgressIndicator
                         android:id="@+id/progress24"
-                        app:trackCornerRadius="16dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        app:trackCornerRadius="16dp" />
 
                 </LinearLayout>
 

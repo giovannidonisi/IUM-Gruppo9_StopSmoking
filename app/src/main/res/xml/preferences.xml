@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/preferences"
-        android:icon="@drawable/ic_sliders">
+    <PreferenceCategory
+        android:icon="@drawable/ic_sliders"
+        android:title="@string/preferences">
 
         <ListPreference
             android:defaultValue="system"
@@ -11,60 +12,61 @@
             android:entryValues="@array/preferences_theme_values"
             android:key="theme"
             android:summary="%1$s"
-            android:title="@string/theme"/>
+            android:title="@string/theme" />
 
         <ListPreference
             android:defaultValue="it"
-            android:icon="@drawable/ic_language"
-            android:title="@string/language"
             android:dialogTitle="@string/choose_language"
             android:entries="@array/preferences_language"
             android:entryValues="@array/preferences_language_values"
+            android:icon="@drawable/ic_language"
             android:key="language"
-            android:summary="%1$s"/>
+            android:summary="%1$s"
+            android:title="@string/language" />
 
         <SwitchPreference
-            android:title="@string/already_quit_smoking"
+            android:icon="@drawable/ic_no_smoke"
             android:key="has_quit"
-            android:icon="@drawable/ic_no_smoke"/>
+            android:title="@string/already_quit_smoking" />
 
         <EditTextPreference
+            android:defaultValue="10"
+            android:dialogLayout="@layout/preference_edit_text_quantity"
+            android:dialogTitle="@string/quantity"
             android:icon="@drawable/ic_cigarette"
             android:key="quantity"
-            android:title="@string/quantity"
             android:summary="@string/quantity_summary"
-            android:defaultValue="10"
-            android:dialogTitle="@string/quantity"
-            android:dialogLayout="@layout/preference_edit_text_quantity"/>
+            android:title="@string/quantity" />
 
         <EditTextPreference
+            android:defaultValue="5"
+            android:dialogLayout="@layout/preference_edit_text_price"
+            android:dialogTitle="@string/price"
             android:icon="@drawable/ic_money"
             android:key="price"
-            android:title="@string/price"
             android:summary="@string/price_summary"
-            android:defaultValue="5"
-            android:dialogTitle="@string/price"
-            android:dialogLayout="@layout/preference_edit_text_price"/>
+            android:title="@string/price" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/about"
-        android:icon="@drawable/ic_info">
+    <PreferenceCategory
+        android:icon="@drawable/ic_info"
+        android:title="@string/about">
 
         <Preference
-            android:persistent="false"
-            android:key="contribute"
             android:icon="@drawable/ic_github"
-            android:title="@string/view_on_github"
-            android:summary="@string/contribute_to_project"/>
+            android:key="contribute"
+            android:persistent="false"
+            android:summary="@string/contribute_to_project"
+            android:title="@string/view_on_github" />
 
         <Preference
-            android:selectable="false"
             android:enabled="false"
-            android:persistent="false"
             android:key="app_info"
-            android:title="@string/app_name"
-            android:summary="@string/app_info"/>
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="@string/app_info"
+            android:title="@string/app_name" />
     </PreferenceCategory>
 
 </PreferenceScreen>

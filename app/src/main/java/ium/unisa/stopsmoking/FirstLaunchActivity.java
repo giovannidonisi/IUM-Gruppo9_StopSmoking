@@ -46,8 +46,7 @@ public class FirstLaunchActivity extends AppCompatActivity {
             if (b) {
                 datePicker.setVisibility(View.VISIBLE);
                 tvQuantity.setText(R.string.first_launch_quantity2);
-            }
-            else {
+            } else {
                 datePicker.setVisibility(View.INVISIBLE);
                 tvQuantity.setText(R.string.first_launch_quantity1);
             }

@@ -28,7 +28,7 @@ public class AppHelper {
     }
 
     public static int[] getReachedInDays() {
-        return new int[] {1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 7, 7, 60, 90,
+        return new int[]{1, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 7, 7, 60, 90,
                 90, 120, 120, 120, 365, 365, 1825, 2555, 2555, 3650};
     }
 

@@ -18,23 +18,21 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 
 import java.text.NumberFormat;
 import java.util.List;
-import java.util.Locale;
 
 import ium.unisa.stopsmoking.R;
 import ium.unisa.stopsmoking.db.Goal;
 
 public class GoalAdapter extends ArrayAdapter<Goal> {
 
-    public GoalAdapter(Context context, List<Goal> goals){
-        super(context,0, goals);
+    public GoalAdapter(Context context, List<Goal> goals) {
+        super(context, 0, goals);
     }
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
-    {
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Goal goal = getItem(position);
-        if(convertView == null)
+        if (convertView == null)
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.goal_card, parent, false);
 
         Context context = getContext();

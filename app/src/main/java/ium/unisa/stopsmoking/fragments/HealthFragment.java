@@ -38,7 +38,7 @@ public class HealthFragment extends Fragment {
         int nonSmokedCigarettes;
         String s;
 
-        if(stoppedDateInMillis > 0) {
+        if (stoppedDateInMillis > 0) {
             days = AppHelper.getDateDifferenceInDays(System.currentTimeMillis(), stoppedDateInMillis);
             nonSmokedCigarettes = quantity * days;
             s = resources.getString(R.string.cigarettes_saved, nonSmokedCigarettes, nonSmokedCigarettes * 13 / 1440);

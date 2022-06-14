@@ -3,6 +3,7 @@
     android:id="@+id/alt01"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,10 +34,10 @@
 
         <com.google.android.material.progressindicator.LinearProgressIndicator
             android:id="@+id/progress"
-            app:trackCornerRadius="16dp"
-            android:progress="50"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:progress="50"
+            app:trackCornerRadius="16dp" />
 
     </LinearLayout>
 

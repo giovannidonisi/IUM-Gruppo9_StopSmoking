@@ -53,9 +53,9 @@ public class AdvicesFragment extends Fragment {
         }
 
         inFromRight = AnimationUtils.loadAnimation(context, R.anim.in_from_right);
-        outToLeft   = AnimationUtils.loadAnimation(context, R.anim.out_to_left);
+        outToLeft = AnimationUtils.loadAnimation(context, R.anim.out_to_left);
         inFromLeft = AnimationUtils.loadAnimation(context, R.anim.in_from_left);
-        outToRight   = AnimationUtils.loadAnimation(context, R.anim.out_to_right);
+        outToRight = AnimationUtils.loadAnimation(context, R.anim.out_to_right);
 
         Random rand = new Random();
         counter = rand.nextInt(lista.size());
@@ -86,7 +86,7 @@ public class AdvicesFragment extends Fragment {
             viewFlipper.setOutAnimation(outToRight);
         } else if (id == R.id.right_arrow) {
             counter++;
-            if (counter > lista.size() -1)
+            if (counter > lista.size() - 1)
                 counter = 0;
 
             if (currentView == 1) {

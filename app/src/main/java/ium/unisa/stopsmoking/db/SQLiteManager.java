@@ -25,8 +25,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    public static SQLiteManager instanceOfDatabase(Context context)
-    {
+    public static SQLiteManager instanceOfDatabase(Context context) {
         if (sqLiteManager == null)
             sqLiteManager = new SQLiteManager(context);
 
@@ -58,7 +57,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
         // TODO qualcosa
     }
 
-    public void addGoalToDatabase(Goal goal){
+    public void addGoalToDatabase(Goal goal) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -69,7 +68,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
         sqLiteDatabase.insert(TABLE_NAME, null, values);
     }
 
-    public void updateGoalInDatabase(Goal goal){
+    public void updateGoalInDatabase(Goal goal) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -80,13 +79,13 @@ public class SQLiteManager extends SQLiteOpenHelper {
         sqLiteDatabase.update(TABLE_NAME, values, ID_FIELD + " =? ", new String[]{String.valueOf(goal.getId())});
     }
 
-    public ArrayList<Goal> getGoalListArray(){
+    public ArrayList<Goal> getGoalListArray() {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         try (Cursor result = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME, null)) {
             ArrayList<Goal> goalArrayList = new ArrayList<>();
 
-            if( result.getCount() != 0 ){
+            if (result.getCount() != 0) {
                 while (result.moveToNext()) {
                     int id = result.getInt(1);
                     String name = result.getString(2);
