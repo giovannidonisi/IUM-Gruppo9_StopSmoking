@@ -1,13 +1,11 @@
 package ium.unisa.stopsmoking.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,19 +13,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
-import ium.unisa.stopsmoking.DataBase.SQLiteManager;
+import java.util.ArrayList;
+
 import ium.unisa.stopsmoking.R;
 import ium.unisa.stopsmoking.databinding.FragmentGoalsBinding;
-import ium.unisa.stopsmoking.util.AppHelper;
+import ium.unisa.stopsmoking.db.Goal;
+import ium.unisa.stopsmoking.db.SQLiteManager;
 import ium.unisa.stopsmoking.util.DecimalDigitsInputFilter;
-import ium.unisa.stopsmoking.util.Goal;
 import ium.unisa.stopsmoking.util.GoalAdapter;
-import java.util.ArrayList;
 
 public class GoalsFragment extends Fragment {
 
@@ -35,40 +32,28 @@ public class GoalsFragment extends Fragment {
     private Goal selectedGoal;
     private ArrayList<Goal> goals;
 
-
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentGoalsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         ListView listView = binding.listgoals;
+        TextView textView = binding.textGoals;
 
         SQLiteManager sqLiteManager = new SQLiteManager(requireContext());
-        LayoutInflater layoutInflater = (LayoutInflater) requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
         goals = sqLiteManager.getGoalListArray();
-        GoalAdapter goalAdapter = new GoalAdapter(requireContext(), goals);
-        listView.setAdapter(goalAdapter);
 
-        for (Goal goal : goals) {
-          AppHelper.log(goal.getName());
-          AppHelper.log(goal.getId());
-          AppHelper.log(goal.getPrice());
-         }
+        if (goals.size() > 0) {
+            GoalAdapter goalAdapter = new GoalAdapter(requireContext(), goals);
+            listView.setAdapter(goalAdapter);
+            textView.setVisibility(View.INVISIBLE);
+        }
 
-
-
-
-        TextView textView = binding.textGoals;
         FloatingActionButton floatingButton = binding.buttonAdd;
-
-        textView.setText(R.string.no_goals);
         floatingButton.setOnClickListener(buttonAddListener);
         return root;
     }
 
-
-
-  View.OnClickListener buttonAddListener = view -> {
+    View.OnClickListener buttonAddListener = view -> {
         LinearLayout linearLayout = (LinearLayout) getLayoutInflater().inflate(R.layout.layout_add_goal, null);
         final TextInputEditText ti1 = linearLayout.findViewById(R.id.ti1);
         final TextInputEditText ti2 = linearLayout.findViewById(R.id.ti2);
@@ -96,25 +81,17 @@ public class GoalsFragment extends Fragment {
                         return;
                     }
 
-                    AppHelper.log("Nome: " + name);
-                    AppHelper.log("Prezzo: " + price);
-
-                  SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
-
-                  if(selectedGoal == null)
-                  {
-                    int id = goals.size();
-                    Goal newGoal= new Goal(id, name, price);
-                    goals.add(newGoal);
-                    sqLiteManager.addGoalToDatabase(newGoal);
-                  }
-                  else
-                  {
-                    selectedGoal.setName(name);
-                    selectedGoal.setPrice(price);
-                    sqLiteManager.updateGoalInDatabase(selectedGoal);
-                  }
-
+                    SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
+                    if (selectedGoal == null) {
+                        int id = goals.size();
+                        Goal newGoal= new Goal(id, name, price);
+                        goals.add(newGoal);
+                        sqLiteManager.addGoalToDatabase(newGoal);
+                    } else {
+                        selectedGoal.setName(name);
+                        selectedGoal.setPrice(price);
+                        sqLiteManager.updateGoalInDatabase(selectedGoal);
+                    }
                 })
                 .show();
     };
@@ -128,10 +105,4 @@ public class GoalsFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
-
-  /*private void loadFromDBToMemory() {
-    SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
-    sqLiteManager.populateGoalListArray();
-  }*/
 }

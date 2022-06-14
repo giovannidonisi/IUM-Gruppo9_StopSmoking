@@ -7,27 +7,13 @@
     tools:context="ium.unisa.stopsmoking.fragments.GoalsFragment">
 
     <ListView
-      android:id="@+id/listgoals"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_marginTop="48dp"
-      android:layout_marginBottom="86dp"
-        />
-
-    <!--<ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_marginTop="48dp"
-      android:layout_marginBottom="86dp">
-
-    <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical"
-      android:id="@+id/initial_cards">
-
-    </LinearLayout>
-    </ScrollView>-->
+        android:id="@+id/listgoals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="86dp" />
 
     <TextView
         android:id="@+id/text_goals"
@@ -38,6 +24,7 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:text="@string/no_goals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +40,5 @@
         android:layout_marginBottom="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
