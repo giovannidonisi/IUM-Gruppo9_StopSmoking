@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
@@ -22,7 +23,8 @@ import ium.unisa.stopsmoking.util.AppHelper;
 public class HealthFragment extends Fragment {
 
     private FragmentHealthBinding binding;
-    int days;
+    private int days;
+    private long stoppedDateInMillis;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentHealthBinding.inflate(inflater, container, false);
@@ -32,7 +34,7 @@ public class HealthFragment extends Fragment {
         TextView textView = binding.textHealth;
 
         int quantity = Integer.parseInt(sharedPreferences.getString("quantity", "10"));
-        long stoppedDateInMillis = sharedPreferences.getLong("dateStopped", -1);
+        stoppedDateInMillis = sharedPreferences.getLong("dateStopped", -1);
         int nonSmokedCigarettes;
         String s;
 
@@ -61,16 +63,20 @@ public class HealthFragment extends Fragment {
             TextView tv = binding.getRoot().findViewById(resourceId);
             int reachedIn = lista[i];
             int percent;
+            int count = reachedIn - days;
 
-            if (days < reachedIn) {
-                percent = days * 100 / reachedIn;
-                int count = reachedIn - days;
-                tv.setText(resources.getQuantityString(R.plurals.reached_in, count, count));
-            }
-            else {
-                percent = 100;
-                tv.setTextColor(resources.getColor(R.color.success));
-                tv.setText(resources.getString(R.string.completed));
+            if (stoppedDateInMillis > 0) {
+                if (days < reachedIn) {
+                    percent = days * 100 / reachedIn;
+                    tv.setText(resources.getQuantityString(R.plurals.reached_in, count, count));
+                } else {
+                    percent = 100;
+                    tv.setTextColor(ContextCompat.getColor(context, R.color.success));
+                    tv.setText(resources.getString(R.string.completed));
+                }
+            } else {
+                percent = 0;
+                tv.setText(resources.getQuantityString(R.plurals.would_reach_in, count, count));
             }
 
             resourceId = resources.getIdentifier("progress" + i, "id", context.getPackageName());

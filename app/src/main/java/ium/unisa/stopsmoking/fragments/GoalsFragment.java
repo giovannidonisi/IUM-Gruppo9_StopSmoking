@@ -31,22 +31,22 @@ public class GoalsFragment extends Fragment {
     private FragmentGoalsBinding binding;
     private Goal selectedGoal;
     private ArrayList<Goal> goals;
+    private GoalAdapter goalAdapter;
+    private TextView textView;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentGoalsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         ListView listView = binding.listgoals;
-        TextView textView = binding.textGoals;
-
+        textView = binding.textGoals;
         SQLiteManager sqLiteManager = new SQLiteManager(requireContext());
         goals = sqLiteManager.getGoalListArray();
+        goalAdapter = new GoalAdapter(requireContext(), goals);
+        listView.setAdapter(goalAdapter);
 
-        if (goals.size() > 0) {
-            GoalAdapter goalAdapter = new GoalAdapter(requireContext(), goals);
-            listView.setAdapter(goalAdapter);
+        if (goals.size() > 0)
             textView.setVisibility(View.INVISIBLE);
-        }
 
         FloatingActionButton floatingButton = binding.buttonAdd;
         floatingButton.setOnClickListener(buttonAddListener);
@@ -92,6 +92,8 @@ public class GoalsFragment extends Fragment {
                         selectedGoal.setPrice(price);
                         sqLiteManager.updateGoalInDatabase(selectedGoal);
                     }
+                    goalAdapter.notifyDataSetChanged();
+                    textView.setVisibility(View.INVISIBLE);
                 })
                 .show();
     };

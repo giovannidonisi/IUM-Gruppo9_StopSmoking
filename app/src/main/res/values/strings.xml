@@ -34,13 +34,21 @@
     <string name="money_saved">Since you quit smoking you have saved approximately € %1$d. You\'re saving around € %2$d per month, more than € %3$d per year!</string>
     <string name="money_would_save">If you quit smoking, you would save around € %1$d per month, more than € %2$d per year!</string>
     <string name="cigarettes_saved">Since you quit smoking you have avoided %1$d cigarettes, equivalent to approximately %2$d days of life</string>
-    <string name="cigarettes_would_save">If you quit smoking you would avoid %1$d cigarettes per month, more than %2$d per year. This means recovering around %3$d days of life per year!</string>
+    <string name="cigarettes_would_save">If you quit smoking, you would avoid %1$d cigarettes per month, more than %2$d per year. This means recovering around %3$d days of life per year!</string>
     <string name="switch_quit_warning">If you proceed you will lose all your progress in the app. Are you sure you want to continue?</string>
     <string name="left_arrow">Left Arrow</string>
     <string name="right_arrow">Right Arrow</string>
     <string name="settings_icon">Settings Icon</string>
     <string name="money">€ %1$s</string>
     <string name="already_saved">Already saved € %1$d, € %2$s remains.\nReached in %3$d days.</string>
+    <plurals name="goal_days">
+        <item quantity="one">If you quit smoking, you would reach this goal in %1$d day</item>
+        <item quantity="other">If you quit smoking, you would reach this goal in %1$d days</item>
+    </plurals>
+    <plurals name="would_reach_in">
+        <item quantity="one">If you quit smoking, you would get this benefit in %1$d day</item>
+        <item quantity="other">If you quit smoking, you would get this benefit in %1$d days</item>
+    </plurals>
 
     <!-- Cards -->
     <plurals name="reached_in">
