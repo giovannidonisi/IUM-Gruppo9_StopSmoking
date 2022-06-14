@@ -28,7 +28,7 @@ public class SavingsFragment extends Fragment {
         TextView textView = binding.textSavings;
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireContext());
 
-        // Divido per 20 che è il numero di sigarette in un pacchetto, così da ottenere il prezzo per sigaretta
+        //TODO  Divido per 20 che è il numero di sigarette in un pacchetto, così da ottenere il prezzo per sigaretta
         float pricePerCigarette = Float.parseFloat(sharedPreferences.getString("price", "5")) / 20;
         int quantity = Integer.parseInt(sharedPreferences.getString("quantity", "10"));
         long stoppedDateInMillis = sharedPreferences.getLong("dateStopped", -1);
