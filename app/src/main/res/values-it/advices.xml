@@ -1,5 +1,31 @@
 <resources>
-    <string name="advice0">Primo consiglio</string>
-    <string name="advice1">Secondo consiglio</string>
-    <string name="advice2">Terzo consiglio</string>
+    <string name="advice0">Trova uno spuntino salutare che ti piace (come carotine o bastoncini di sedano) e portalo sempre con te</string>
+    <string name="advice1">Tieni impegnata la bocca con una gomma da masticare o una caramella</string>
+    <string name="advice2">Fai ginnastica, quando si smette di fumare è bene aumentare l\'attività fisica</string>
+    <string name="advice3">Mangia molta frutta. Frutta e verdura fresca aiutano a sconfiggere la voglia di fumare</string>
+    <string name="advice4">Pensa positivo. Smetti di associare lo smettere di fumare alla privazione di qualcosa, ma sforzati di comprendere che da questa scelta potrai ottenere solo grandi benefici</string>
+    <string name="advice5">Fai una sauna</string>
+    <string name="advice6">Riduci la caffeina, ha un effetto maggiore su chi ha dipendenza da nicotina</string>
+    <string name="advice7">Pulire casa è un modo per sbarazzarsi della mentalità da fumatore</string>
+    <string name="advice8">Fai un pisolino</string>
+    <string name="advice9">Compra un gioco antistress. È importante trovare nuovi modi per rilassarsi e calmarsi senza nicotina</string>
+    <string name="advice10">La meditazione potrebbe sembrare un rimedio esotico per smettere di fumare ma è un modo fantastico per gestire alcuni aspetti psicologici dovuti alla carenza di nicotina</string>
+    <string name="advice11">Parla a telefono con un amico</string>
+    <string name="advice12">Per i genitori: dare il buon esempio. Un genitore che smette, o comunque non fuma, è il modo migliore per convincere il figlio a fare lo stesso</string>
+    <string name="advice13">Fai una doccia</string>
+    <string name="advice14">Cucina il tuo piatto preferito</string>
+    <string name="advice15">Guarda un film, una serie TV o un documentario</string>
+    <string name="advice16">Coltiva nuovi hobby</string>
+    <string name="advice17">Tieni impegnata la mente leggendo un buon libro</string>
+    <string name="advice18">Bevi molta acqua. Quando si smette di fumare è bene bere abbondantemente acqua e muoversi di più</string>
+    <string name="advice19">Il salvadanaio. Un buon incentivo a smettere di fumare è quello di darsi un premio finale, a tappe</string>
+    <string name="advice20">Elimina le tentazioni in casa: posacenere, accendini, oggetti che richiamano al fumo</string>
+    <string name="advice21">Non scoraggiarti. Le ricadute sono del tutto naturali nel faticoso percorso che porta a smettere di fumare, non dimenticare che si tratta di una dipendenza</string>
+    <string name="advice22">Inspira dalle dita una cannuccia</string>
+    <string name="advice23">Organizza il tuo prossimo viaggio</string>
+    <string name="advice24">Per i genitori: un premio se il figlio smette. Se vostro figlio reagisce positivamente e riesce a smettere, merita un premio</string>
+    <string name="advice25">Fai una passeggiata e torna a provare la sensazione di respirare a pieni polmoni</string>
+    <string name="advice26">Lava i denti per far sparire la voglia di fumare</string>
+    <string name="advice27">Butta via tutto ciò che ti ricorda le sigarette</string>
+    <string name="advice28">Ascolta la tua musica preferita</string>
 </resources>

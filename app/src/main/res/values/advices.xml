@@ -1,5 +1,31 @@
 <resources>
-    <string name="advice0">First advice</string>
-    <string name="advice1">Second advice</string>
-    <string name="advice2">Third advice</string>
+    <string name="advice0">Find a healthy snack you enjoy (such as baby carrots or celery sticks) and always carry it with you</string>
+    <string name="advice1">Keep your mouth busy with a chewing gum or a candy</string>
+    <string name="advice2">Exercise, when you stop smoking it is good to increase physical activity</string>
+    <string name="advice3">Eat lots of fruit. Fresh fruits and vegetables help to overcome the urge to smoke</string>
+    <string name="advice4">Think positive. Stop associating quitting smoking with deprivation of something, but make an effort to understand that you can only get great benefits from this choice.</string>
+    <string name="advice5">Take a sauna</string>
+    <string name="advice6">Cut back on caffeine, it has a greater effect on nicotine addicts</string>
+    <string name="advice7">Cleaning the house is one way to get rid of the smoker mentality</string>
+    <string name="advice8">Take a nap</string>
+    <string name="advice9">Buy a stress reliever game. It is important to find new ways to relax and calm down without nicotine</string>
+    <string name="advice10">Meditation may seem like an exotic remedy for quitting smoking but it is a fantastic way to manage some psychological aspects of nicotine deficiency</string>
+    <string name="advice11">Talk to a friend on the phone</string>
+    <string name="advice12">For parents: lead by example. A parent who quits, or at least doesn\'t smoke, is the best way to get the child to do the same</string>
+    <string name="advice13">Take a shower</string>
+    <string name="advice14">Cook your favorite dish</string>
+    <string name="advice15">Watch a movie, a TV series, or a documentary</string>
+    <string name="advice16">Take up new hobbies</string>
+    <string name="advice17">Keep your mind busy by reading a good book</string>
+    <string name="advice18">Drink lots of water. When you stop smoking, it is good to drink plenty of water and move more</string>
+    <string name="advice19">The piggy bank. A good incentive to quit smoking is to give yourself a final reward, in stages</string>
+    <string name="advice20">Remove temptations at home: ashtrays, lighters, objects that evoke smoke</string>
+    <string name="advice21">Don\'t be discouraged. Relapses are completely natural in the tiring journey that leads to quitting smoking, do not forget that it is an addiction</string>
+    <string name="advice22">Breathe in a straw from your fingers</string>
+    <string name="advice23">Plan your next trip</string>
+    <string name="advice24">For parents: a reward if the child stops. If your child reacts positively and is able to quit, he deserves a reward</string>
+    <string name="advice25">Take a walk and experience the sensation of deep breathing again</string>
+    <string name="advice26">Brush your teeth to make the urge to smoke go away</string>
+    <string name="advice27">Throw away anything that reminds you of cigarettes</string>
+    <string name="advice28">Listen to your favorite music</string>
 </resources>
