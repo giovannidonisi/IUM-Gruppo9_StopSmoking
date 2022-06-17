@@ -83,7 +83,7 @@ public class GoalsFragment extends Fragment {
 
                     SQLiteManager sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
                     if (selectedGoal == null) {
-                        int id = goals.size();
+                        long id = System.currentTimeMillis();
                         Goal newGoal = new Goal(id, name, price);
                         goals.add(newGoal);
                         sqLiteManager.addGoalToDatabase(newGoal);

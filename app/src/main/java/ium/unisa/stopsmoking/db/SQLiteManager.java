@@ -43,7 +43,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
                 .append(COUNTER)
                 .append(" INTEGER PRIMARY KEY AUTOINCREMENT, ")
                 .append(ID_FIELD)
-                .append(" INT, ")
+                .append(" LONG, ")
                 .append(TITLE_FIELD)
                 .append(" TEXT, ")
                 .append(PRICE_FIELD)
@@ -79,6 +79,13 @@ public class SQLiteManager extends SQLiteOpenHelper {
         sqLiteDatabase.update(TABLE_NAME, values, ID_FIELD + " =? ", new String[]{String.valueOf(goal.getId())});
     }
 
+    public void deleteGoalInDatabase(Goal goal) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, ID_FIELD + " = ?",
+          new String[] { String.valueOf(goal.getId()) });
+        db.close();
+    }
+
     public ArrayList<Goal> getGoalListArray() {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
@@ -87,7 +94,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
 
             if (result.getCount() != 0) {
                 while (result.moveToNext()) {
-                    int id = result.getInt(1);
+                    long id = result.getInt(1);
                     String name = result.getString(2);
                     double price = result.getDouble(3);
                     Goal goal = new Goal(id, name, price);
