@@ -14,8 +14,6 @@ public class SQLiteManager extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "GoalsDB";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME = "Goal";
-    private static final String COUNTER = "Counter";
-
 
     private static final String ID_FIELD = "id";
     private static final String TITLE_FIELD = "name";
@@ -34,16 +32,13 @@ public class SQLiteManager extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
         StringBuilder sql;
         sql = new StringBuilder()
                 .append("CREATE TABLE ")
                 .append(TABLE_NAME)
                 .append("(")
-                .append(COUNTER)
-                .append(" INTEGER PRIMARY KEY AUTOINCREMENT, ")
                 .append(ID_FIELD)
-                .append(" LONG, ")
+                .append(" INTEGER PRIMARY KEY AUTOINCREMENT, ")
                 .append(TITLE_FIELD)
                 .append(" TEXT, ")
                 .append(PRICE_FIELD)
@@ -61,7 +56,6 @@ public class SQLiteManager extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(ID_FIELD, goal.getId());
         values.put(TITLE_FIELD, goal.getName());
         values.put(PRICE_FIELD, goal.getPrice());
 
@@ -72,17 +66,16 @@ public class SQLiteManager extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(ID_FIELD, goal.getId());
         values.put(TITLE_FIELD, goal.getName());
         values.put(PRICE_FIELD, goal.getPrice());
 
-        sqLiteDatabase.update(TABLE_NAME, values, ID_FIELD + " =? ", new String[]{String.valueOf(goal.getId())});
+        sqLiteDatabase.update(TABLE_NAME, values, ID_FIELD + "=?", new String[]{String.valueOf(goal.getId())});
     }
 
-    public void deleteGoalInDatabase(Goal goal) {
+    public void deleteGoalFromDatabase(Goal goal) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_NAME, ID_FIELD + " = ?",
-          new String[] { String.valueOf(goal.getId()) });
+        db.delete(TABLE_NAME, ID_FIELD + "=?",
+                new String[] { String.valueOf(goal.getId()) });
         db.close();
     }
 
@@ -94,9 +87,9 @@ public class SQLiteManager extends SQLiteOpenHelper {
 
             if (result.getCount() != 0) {
                 while (result.moveToNext()) {
-                    long id = result.getInt(1);
-                    String name = result.getString(2);
-                    double price = result.getDouble(3);
+                    long id = result.getInt(0);
+                    String name = result.getString(1);
+                    double price = result.getDouble(2);
                     Goal goal = new Goal(id, name, price);
                     goalArrayList.add(goal);
                 }
