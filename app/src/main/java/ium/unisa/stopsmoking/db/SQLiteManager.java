@@ -75,7 +75,7 @@ public class SQLiteManager extends SQLiteOpenHelper {
     public void deleteGoalFromDatabase(Goal goal) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_NAME, ID_FIELD + "=?",
-                new String[] { String.valueOf(goal.getId()) });
+                new String[]{String.valueOf(goal.getId())});
         db.close();
     }
 

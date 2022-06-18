@@ -28,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
         sharedPreferences.registerOnSharedPreferenceChangeListener(listener);
     }
 
-    private SharedPreferences.OnSharedPreferenceChangeListener listener = (prefs, key) -> {
+    private final SharedPreferences.OnSharedPreferenceChangeListener listener = (prefs, key) -> {
         if (key.equals("theme")) {
             AppHelper.setTheme(sharedPreferences.getString("theme", "system"));
         } else if (key.equals("language")) {

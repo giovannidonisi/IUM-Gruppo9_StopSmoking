@@ -27,14 +27,13 @@ import ium.unisa.stopsmoking.util.AppHelper;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Lingua
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         String lang = sharedPreferences.getString("language", "it");
         Locale myLocale = new Locale(lang);
         Resources res = getResources();

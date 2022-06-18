@@ -39,7 +39,6 @@
     <string name="right_arrow">Freccia destra</string>
     <string name="settings_icon">Icona delle impostazioni</string>
     <string name="money">%1$s€</string>
-    <string name="confirm_goal_delete">Sei sicuro di voler eliminare questo obiettivo?</string>
     <string name="edit_goal">Modifica obiettivo</string>
     <string name="delete">Elimina</string>
     <string name="save">Salva</string>

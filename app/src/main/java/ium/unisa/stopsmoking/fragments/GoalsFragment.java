@@ -42,7 +42,7 @@ public class GoalsFragment extends Fragment {
 
         listView = binding.listgoals;
         textView = binding.textGoals;
-        sqLiteManager = new SQLiteManager(requireContext());
+        sqLiteManager = SQLiteManager.instanceOfDatabase(requireContext());
         goals = sqLiteManager.getGoalListArray();
         goalAdapter = new GoalAdapter(requireContext(), goals);
         listView.setAdapter(goalAdapter);

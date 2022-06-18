@@ -40,7 +40,6 @@
     <string name="right_arrow">Right Arrow</string>
     <string name="settings_icon">Settings Icon</string>
     <string name="money">€ %1$s</string>
-    <string name="confirm_goal_delete">Are you sure you want to delete this goal?</string>
     <string name="edit_goal">Edit Goal</string>
     <string name="delete">Delete</string>
     <string name="save">Save</string>

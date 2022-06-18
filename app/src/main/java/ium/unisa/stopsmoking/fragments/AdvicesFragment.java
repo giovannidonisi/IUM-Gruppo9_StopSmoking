@@ -27,7 +27,6 @@ public class AdvicesFragment extends Fragment {
     private FragmentAdvicesBinding binding;
     private ArrayList<String> lista;
     private TextView textView1, textView2;
-    private MaterialButton leftArrow, rightArrow;
     private ViewFlipper viewFlipper;
     private Animation inFromRight, inFromLeft, outToLeft, outToRight;
     private int counter, currentView = 1;
@@ -39,8 +38,8 @@ public class AdvicesFragment extends Fragment {
         lista = new ArrayList<>();
         textView1 = binding.textAdvices1;
         textView2 = binding.textAdvices2;
-        leftArrow = binding.leftArrow;
-        rightArrow = binding.rightArrow;
+        MaterialButton leftArrow = binding.leftArrow;
+        MaterialButton rightArrow = binding.rightArrow;
         viewFlipper = binding.viewFlipper;
 
         Context context = requireContext();

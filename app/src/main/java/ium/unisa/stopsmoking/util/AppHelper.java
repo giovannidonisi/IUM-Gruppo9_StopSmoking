@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 public class AppHelper {
 
-    public static final String LOGGER_TAG = "DEBUGGING";
-
     public static int getDateDifferenceInDays(long d1, long d2) {
         long a = (d1 - d2) / 86400000;
         return (int) a;
@@ -35,23 +33,10 @@ public class AppHelper {
     }
 
     public static void log(Object what) {
-        Log.d(LOGGER_TAG, String.valueOf(what));
+        Log.d("DEBUGGING", String.valueOf(what));
     }
 
     public static void showShortToast(Context context, int resId) {
         Toast.makeText(context, resId, Toast.LENGTH_SHORT).show();
     }
-
-    public static void showShortToast(Context context, String msg) {
-        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
-    }
-
-    public static void showLongToast(Context context, int resId) {
-        Toast.makeText(context, resId, Toast.LENGTH_LONG).show();
-    }
-
-    public static void showLongToast(Context context, String msg) {
-        Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
-    }
-
 }
