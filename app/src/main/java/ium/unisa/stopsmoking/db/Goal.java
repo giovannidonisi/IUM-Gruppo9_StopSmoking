@@ -12,6 +12,11 @@ public class Goal {
         this.price = price;
     }
 
+    public Goal(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
     public long getId() {
         return id;
     }

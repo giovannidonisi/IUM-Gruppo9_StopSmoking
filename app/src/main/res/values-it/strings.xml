@@ -7,7 +7,7 @@
     <string name="about">Info</string>
     <string name="view_on_github">Visualizza su GitHub</string>
     <string name="contribute_to_project">Contribuisci a questo progetto</string>
-    <string name="app_info">Versione 0.9.0\n\nProgetto di Interazione Uomo Macchina, da:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
+    <string name="app_info">Versione 0.9.5\n\nProgetto di Interazione Uomo Macchina, da:\n\u2022 Giovanni Donisi\n\u2022 Alfonso D\'Albenzio\n\u2022 Domenico Palma</string>
     <string name="preferences">Preferenze</string>
     <string name="theme">Tema</string>
     <string name="choose_theme">Scegli il tema</string>
@@ -39,6 +39,10 @@
     <string name="right_arrow">Freccia destra</string>
     <string name="settings_icon">Icona delle impostazioni</string>
     <string name="money">%1$s€</string>
+    <string name="confirm_goal_delete">Sei sicuro di voler eliminare questo obiettivo?</string>
+    <string name="edit_goal">Modifica obiettivo</string>
+    <string name="delete">Elimina</string>
+    <string name="save">Salva</string>
     <string name="already_saved">Già risparmiati %1$d€, restano %2$s€.\nRaggiunto in %3$d giorni.</string>
     <plurals name="goal_days">
         <item quantity="one">Se smettessi di fumare raggiungeresti questo obiettivo in %1$d giorno</item>

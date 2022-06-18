@@ -79,8 +79,6 @@ public class GoalAdapter extends ArrayAdapter<Goal> {
         linearProgressIndicator.setProgressCompat(percent, true);
         description.setText(s2);
 
-
-        AppHelper.log(goal.getId());
         return convertView;
     }
 }
