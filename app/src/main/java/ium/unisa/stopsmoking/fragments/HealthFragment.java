@@ -11,11 +11,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
-
-import com.google.android.material.progressindicator.LinearProgressIndicator;
 
 import java.util.ArrayList;
 

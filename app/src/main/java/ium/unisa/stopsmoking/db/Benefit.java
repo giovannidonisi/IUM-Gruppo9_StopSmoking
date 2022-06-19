@@ -24,24 +24,12 @@ public class Benefit {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public int getReachedIn() {
         return reachedIn;
     }
 
-    public void setReachedIn(int reachedIn) {
-        this.reachedIn = reachedIn;
-    }
-
     public int getPercent() {
         return percent;
-    }
-
-    public void setPercent(int percent) {
-        this.percent = percent;
     }
 
 }
