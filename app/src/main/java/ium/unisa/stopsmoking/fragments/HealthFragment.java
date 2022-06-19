@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,15 +17,20 @@ import androidx.preference.PreferenceManager;
 
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 
+import java.util.ArrayList;
+
 import ium.unisa.stopsmoking.R;
 import ium.unisa.stopsmoking.databinding.FragmentHealthBinding;
+import ium.unisa.stopsmoking.db.Benefit;
 import ium.unisa.stopsmoking.util.AppHelper;
+import ium.unisa.stopsmoking.util.BenefitAdapter;
 
 public class HealthFragment extends Fragment {
 
     private FragmentHealthBinding binding;
     private int days;
     private long stoppedDateInMillis;
+    private ListView benefitList;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentHealthBinding.inflate(inflater, container, false);
@@ -48,6 +54,7 @@ public class HealthFragment extends Fragment {
             s = resources.getString(R.string.cigarettes_would_save, nonSmokedCigarettes, nonSmokedCigarettes * 12, nonSmokedCigarettes * 12 * 14 / 1440);
         }
         textView.setText(s);
+        benefitList = binding.benefitList;
         buildCards();
 
         return binding.getRoot();
@@ -57,10 +64,9 @@ public class HealthFragment extends Fragment {
         Context context = requireContext();
         Resources resources = context.getResources();
         int[] lista = AppHelper.getReachedInDays();
+        ArrayList<Benefit> benefitArrayList = new ArrayList<>();
 
         for (int i = 0; i < lista.length; i++) {
-            int resourceId = resources.getIdentifier("reached" + i, "id", context.getPackageName());
-            TextView tv = binding.getRoot().findViewById(resourceId);
             int reachedIn = lista[i];
             int percent;
             int count = reachedIn - days;
@@ -68,21 +74,23 @@ public class HealthFragment extends Fragment {
             if (stoppedDateInMillis > 0) {
                 if (days < reachedIn) {
                     percent = days * 100 / reachedIn;
-                    tv.setText(resources.getQuantityString(R.plurals.reached_in, count, count));
                 } else {
                     percent = 100;
-                    tv.setTextColor(ContextCompat.getColor(context, R.color.success));
-                    tv.setText(resources.getString(R.string.completed));
                 }
             } else {
                 percent = 0;
-                tv.setText(resources.getQuantityString(R.plurals.would_reach_in, count, count));
             }
 
-            resourceId = resources.getIdentifier("progress" + i, "id", context.getPackageName());
-            LinearProgressIndicator progressBar = binding.getRoot().findViewById(resourceId);
-            progressBar.setProgressCompat(percent, true);
+            int resourceId = resources.getIdentifier("title" + i, "string", context.getPackageName());
+            String title = resources.getString(resourceId);
+            resourceId = resources.getIdentifier("secondary_text" + i, "string", context.getPackageName());
+            String description = resources.getString(resourceId);
+            Benefit benefit = new Benefit(title, description, count , percent);
+            benefitArrayList.add(benefit);
         }
+
+        BenefitAdapter benefitAdapter = new BenefitAdapter(requireContext(), benefitArrayList);
+        benefitList.setAdapter(benefitAdapter);
     }
 
     @Override
