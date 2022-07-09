@@ -12,9 +12,6 @@
     <string name="preferences">Preferenze</string>
     <string name="theme">Tema</string>
     <string name="choose_theme">Scegli il tema</string>
-    <string name="theme_system">Predefinito di sistema</string>
-    <string name="theme_light">Chiaro</string>
-    <string name="theme_dark">Scuro</string>
     <string name="next">AVANTI</string>
     <string name="quantity">Quantità</string>
     <string name="quantity_summary">Il numero di sigarette che fumi al giorno</string>
